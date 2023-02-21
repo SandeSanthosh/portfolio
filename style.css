@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0rem;
+    overflow: hidden; 
+  }
+
+#blob{
+    background-color: white;
+    height: 10vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, rgb(255, 0, 0));
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+} 
+
+
+#blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(6vmax);
+  }
+
+  p {
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    margin: 0rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: 3;
+  }
+
+  
+  
